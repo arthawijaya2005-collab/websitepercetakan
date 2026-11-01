@@ -1,0 +1,6 @@
+# Izinkan akses gambar & PDF, blok file berbahaya
+Options -Indexes
+<FilesMatch "\.(php|phtml|php3|php4|php5|pl|py|jsp|asp|htm|html|shtml|sh|cgi)$">
+  Order Deny,Allow
+  Deny from all
+</FilesMatch>
